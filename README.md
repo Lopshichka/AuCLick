@@ -1,19 +1,19 @@
-# AuCLick - Автокликер на Java
+# AuCLick - Autocliker in Java
 
-⚠️ **Внимание: код учебный/экспериментальный!**
-- Код далек от идеала, но программа РАБОТАЕТ.
-- Можете изучать, как НЕ надо делать, но при этом получить работающую программу.
+⚠️ **Attention: the code is educational/experimental!**
+- The code is far from ideal, but the program WORKS.
+- You can learn how NOT to do it, but still get a working program.
 
-⚙ Код требует улучшений, скорее всего самое неприятное, что вы заметите, это то, что нужно убрать JLabel-костыли для переноса строк, надо также убрать FlowLayout, заменив всё это на GridBagLayout, для нормальной сетки элементов в окне. Что еще можно подметить, так это то, что огромный main можно разбить на методы, для лучшей читаемости кода и вынести константы в отдельный класс.
+⚙ The code requires improvements, most likely the most unpleasant thing that you will notice is that you need to remove the JLabel crutches for line breaks, you also need to remove the FlowLayout, replacing all this with a GridBagLayout, for a normal grid of elements in the window. What else can be noticed is that the huge main can be divided into methods, for better code readability, and constants can be placed in a separate class.
 
-💻 Предупреждение для пользователей:
-Программа использует глобальный хук клавиш (jnativehook).
-На некоторых системах может потребоваться запуск от имени администратора.
+💻 Warning for users:
+The program uses a global keyboard hook (jnativehook).
+On some systems, you may need to run as an administrator.
 
-🛠 Буду рад если вы форкните репозиторий или сделаете pull-request
+🛠 I will be glad if you fork the repository or make a pull request.
 
-### 1. Скомпилировать
+### 1. Compile:
 javac -cp "lib/jnativehook-2.2.2.jar" -d bin src/AuCllick.java
 
-### 2. Запустить
+### 2. To run:
 java --enable-native-access=ALL-UNNAMED -cp "bin;lib/jnativehook-2.2.2.jar" AuCllick
